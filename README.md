@@ -14,3 +14,6 @@ cd OpenSiv3D-Docker
 sudo ./build.sh
 sudo ./run.sh
 ```
+
+自分で`src`, `include`内に`cpp`,`hpp`を配置してください．
+また，同時に`CMakeLists.txt` にも追加したファイルは記述してください．
