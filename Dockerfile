@@ -3,7 +3,9 @@ FROM archlinux/base
 LABEL version=1.0
 MAINTAINER Shu Kakihana <shu.kakihana@gmail.com>
 
-RUN pacman -Sy --noconfirm base-devel git glew opencv libpng libjpeg-turbo giflib libwebp freetype2 harfbuzz openal libogg  libvorbis boost glib2 ffmpeg vtk hdf5 xorg cmake ninja qt5-base pulseaudio
+RUN pacman -Sy
+RUN pacman -S --noconfirm base-devel git glew opencv libpng libjpeg-turbo giflib libwebp
+RUN pacman -S --noconfirm freetype2 harfbuzz openal libogg  libvorbis boost glib2 ffmpeg vtk hdf5 xorg cmake ninja qt5-base pulseaudio
 
 RUN useradd -m builder && \
     echo 'builder ALL=(root) NOPASSWD:ALL' > /etc/sudoers.d/makepkg
