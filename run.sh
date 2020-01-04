@@ -20,11 +20,12 @@ sound_options="\
 
 xhost +local:
 
-docker run --rm -it --net host \
+sudo docker run --rm -it --net host \
   --volume "$(pwd):/var/work" \
   ${x11_options} \
   ${graphic_options} \
   ${sound_options} \
+  --privileged \
   opensiv3d \
 
 xhost -local:
