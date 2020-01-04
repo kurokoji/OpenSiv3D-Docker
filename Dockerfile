@@ -24,8 +24,8 @@ WORKDIR /builds
 RUN git clone --depth 1 https://github.com/Siv3D/OpenSiv3D.git
 
 WORKDIR /builds/OpenSiv3D/Linux
-RUN mkdir Debug
-WORKDIR /builds/OpenSiv3D/Linux/Debug
+RUN mkdir Build
+WORKDIR /builds/OpenSiv3D/Linux/Build
 RUN cmake -GNinja .. && ninja
 
 WORKDIR /builds/OpenSiv3D/Linux/App
