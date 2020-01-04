@@ -11,8 +11,8 @@
 ```
 git clone https://github.com/kurokoji/OpenSiv3D-Docker.git
 cd OpenSiv3D-Docker
-sudo ./build.sh
-sudo ./run.sh
+./build.sh
+./run.sh
 ```
 
 自分で`src`, `include`内に`cpp`,`hpp`を配置してください．
